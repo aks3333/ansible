@@ -1,0 +1,15 @@
+- hosts: all
+  tasks:
+    - name: create directory  into /tmp
+      file:
+               path: /tmp/data
+               state: directory
+
+
+
+
+
+    - name: copy 
+      copy:
+            content: "helloansonle"
+            dest: /etc/motd
